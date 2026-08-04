@@ -1,6 +1,6 @@
-# Automação de Relatórios
+# Automação de Relatórios de Vendas
 
-Projeto desenvolvido em Python para automatizar a leitura e análise de dados de vendas utilizando pandas.
+Projeto em Python que automatiza a leitura e análise de dados de vendas a partir de arquivos CSV, gerando métricas de faturamento automaticamente — um processo que normalmente seria feito manualmente em planilhas.
 
 ## Funcionalidades
 
@@ -10,6 +10,26 @@ Projeto desenvolvido em Python para automatizar a leitura e análise de dados de
 - Cálculo de ticket médio
 - Geração automática de relatório CSV
 
+## Exemplo de saída
+
+```
+==========RELATÓRIO DE VENDAS==========
+         data    produto  quantidade  preco  total
+0  01/05/2024  Produto A           3     20     60
+1  01/05/2024  Produto B           1     50     50
+2  02/05/2024  Produto A           2     20     40
+3  03/05/2024  Produto C           5     10     50
+
+O faturamento total foi de R$200.00
+
+Faturamento por produto:
+- Produto A: R$100.00
+- Produto B: R$50.00
+- Produto C: R$50.00
+
+Ticket médio: R$50.00
+```
+
 ## Tecnologias utilizadas
 
 - Python
@@ -17,24 +37,20 @@ Projeto desenvolvido em Python para automatizar a leitura e análise de dados de
 
 ## Estrutura do projeto
 
+```
 automacao-relatorios-python/
 │
-├── data_raw/
-├── data_output/
+├── data_raw/       # dados de entrada (CSV)
+├── data_output/    # relatórios gerados
 ├── docs/
 ├── src/
 │   └── main.py
+```
 
 ## Como executar
 
-1. Instale as dependências:
-
+```bash
 pip install pandas
-
-2. Entre na pasta src:
-
 cd src
-
-3. Execute o projeto:
-
 python main.py
+```
