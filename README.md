@@ -17,7 +17,7 @@ Projeto desenvolvido em Python para automatizar a leitura e análise de dados de
 
 ## Estrutura do projeto
 
-automacao-relatorios/
+automacao-relatorios-python/
 │
 ├── data_raw/
 ├── data_output/
@@ -31,6 +31,10 @@ automacao-relatorios/
 
 pip install pandas
 
-2. Execute o projeto:
+2. Entre na pasta src:
+
+cd src
+
+3. Execute o projeto:
 
 python main.py
